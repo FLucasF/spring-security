@@ -1,4 +1,4 @@
-package tech.build.springsecurity.Entities;
+package tech.build.springsecurity.entities;
 
 import jakarta.persistence.*;
 import org.hibernate.annotations.CreationTimestamp;
@@ -15,7 +15,8 @@ public class Tweet {
 
     private String content;
 
-
+    @ManyToOne
+    @JoinColumn(name = "user_id")
     private User user;
 
     @CreationTimestamp

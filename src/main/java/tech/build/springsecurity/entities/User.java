@@ -1,4 +1,4 @@
-package tech.build.springsecurity.Entities;
+package tech.build.springsecurity.entities;
 
 import jakarta.persistence.*;
 
